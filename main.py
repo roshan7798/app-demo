@@ -155,7 +155,6 @@ async def gemini_translate(client, model, config, text_input):
         raise  # Re-raise to trigger session recreation
 
 import torchaudio, torch
-from IPython.display import Audio
 
 async def t2S_translate(model, text_input, tgt_lang, speaker_id):
   # Clients anf configs (should differ for each language and speaker)
