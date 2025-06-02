@@ -14,7 +14,6 @@ Original file is located at
 # !pip install fastapi uvicorn pyngrok torchaudio google-genai
 
 from google import genai
-from google.colab import userdata
 from google.genai import types
 import asyncio
 import numpy as np
