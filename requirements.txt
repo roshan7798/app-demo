@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+google-genai
+torchaudio
+numpy
+soundfile
+aiofiles

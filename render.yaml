@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: fastapi-websocket-server
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn -w 1 -k uvicorn.workers.UvicornWorker main:app
+    envVars:
+      - key: EN1
+        value: AIzaSyBt0p9oVka6fwI7GSlIXTRStriK0JPn52Q
+      - key: EN2
+        value: AIzaSyCD5yrjgY3x-ts6yR4Ag7VRKZI7n5EsOQg
+      - key: AR1
+        value: AIzaSyA3c3cXPNwp4Wi-6zDkFja8Qb_dueCLHsw
+      - key: AR2
+        value: AIzaSyAzW55F2RbdU5cHPg06coCPcVY1itVeym0
+      - key: FA1
+        value: AIzaSyCciXNUgN66c406aXyW3D3h0NuUZaAJfpA
+      - key: FA2
+        value: AIzaSyBEdWHQ9AB12X3RaeA5UuvdN4hUS41d8tA
+    autoDeploy: true
