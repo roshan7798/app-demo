@@ -4,6 +4,6 @@ torchaudio
 numpy
 soundfile
 aiofiles
-uvicorn
+uvicorn[standard]
 gunicorn
 
